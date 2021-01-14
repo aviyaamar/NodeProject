@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <ul>
+      <% allUsers.forEach(function(user) { %>
+        <li> <h3> <%= user.Username %></h3> 
+        <a href="/users/add/<%= user.Username %> " > Update</a>
+        <a href="/users/delete/<%= user.Username %> "> Delete</a>
+        </li>
+        <br/>
+
+
+    <%  }) %>
+    </ul>
+   <br/>
+   <a href="/users/add"> Add New User</a>
+   <br/>
+   <a href="/login"> Back </a>
+  
+    
+  </body>
+</html>

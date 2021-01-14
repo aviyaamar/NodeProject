@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Data Page</title>
+  </head>
+  <body>
+    <h1>Welcome to <%= title %> Movie Page</h1>
+    
+  
+    <b>ID: </b><%= id %> <br>
+    <b>Name: </b><%= title %><br>
+    <b>Language: </b><%= language %><br>
+    <b>Genres:</b><% genres.forEach(function(item) { %>
+
+      <li><%= item %></li>
+
+    <% }) %>
+
+    <br>
+    <img src = "<%= image%>">
+    <br>
+    <a href = "/login">Back </a>
+  </body>
+</html>

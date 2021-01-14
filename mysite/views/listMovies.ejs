@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <ul>
+      <% movies.forEach(function(movie) { %>
+        <li> <h3> <%= movie.name %></h3> 
+        <li><%= movie.id %></li>
+        </li>
+        <br/>
+
+
+    <%  }) %>
+    </ul>
+   <br/>
+   
+    
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%= title %>
+    </head>       
+     <body>
+         <h1>  <%= title %> </h1>
+
+         <form action="/users/update" method="POST">
+        User: <input type="text" name= "Username" value="<%= Username %>"> <br/>
+        Password: <input type="text" name="Password" value="<%= Password %>"><br/>
+        Transacrions: <input type="number" name="transaction" value="<%= number %>"><br/>
+
+        <input type="submit" value="<%= button %>"> <br/>
+        </form>
+        <br><br/>
+        <a href="/login"> Back</a>
+     </body>
+</html>

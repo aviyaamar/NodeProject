@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+   
+
+    <h3>You have <%= number %> transactions left for today!</h3>
+
+
+    <form action="menu/getoption" method="POST">
+        <select name = actions>
+            <option disabled selected value> ---Select Actions---</option> 
+            <option name="create">Create A movie</option>
+            <option name="Search">Search for movies</option>
+            <option name="Edit">Edit Users</option>
+        </select>
+        <br><br>
+        <br> <br/> 
+
+        
+        <input type="submit" value="Select">
+
+
+
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+   
+    <h1>Hello  this is your search Movie page</h1>
+
+
+    <form action="search/find-data" method="POST">
+      <b> Name: </b> <input type="text" name="moviename"  /><br><br/>
+      <b>Language:</b>
+      <select name="language">
+        <option disabled selected value>-- Select a Language --</option>
+        <option name = "Hebrew">Hebrew</option>
+        <option name = "Language">English</option>
+        <option name ="spanish">spanish</option>
+      </select>
+      <br> <br/>
+
+      <b>Genres:</b>
+      <select name="genre">
+        <option disabled selected value>-- Select a Genre --</option>
+        <option name="Drama">Drama</option>
+        <option name="Crime">Crime</option>
+        <option name="Comedy">Comedy</option>
+        <option name="Horror">Horror</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Search" />
+    </form>
+    <br />
+    <a href="/login">Back </a>
+    
+  </body>
+</html>

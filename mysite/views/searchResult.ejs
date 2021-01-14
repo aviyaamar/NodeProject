@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h2>Showing Results for: <%= title %></h2>
+
+    <table border = "1">
+        <tr>
+          <td>Search Result</td>
+          <td>Results Genres</td>
+          <td>Movies from Same Genre</td>
+        </tr>
+        <% movies.forEach(function(movie) { %>
+
+          <tr>
+            <td><a href = "moviedata/<%= movie.id %>"><%= movie.name %></a></td>
+            <td><% movie.genres.forEach(function(genre) { %>
+                    <%= genre %>,
+            <% }) %></td>
+
+            <td><% sameGenres.forEach(function(sameGenre) { %>
+                <a href = "moviedata/<%= sameGenre.id %>"><%= sameGenre.name %>, </a>
+            
+            <% }) %></td> 
+            </tr>
+        <% }) %>
+    
+    </table>
+    
+  
+  
+    <br><br>
+
+    <a href = "/login">Back</a>
+
+  </body>
+</html>
+
